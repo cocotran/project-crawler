@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 from requests.models import Response
 
 # URL link for crawling
-URL: str = "https://create.arduino.cc/projecthub/TheGadgetBoy/ds18b20-digital-temperature-sensor-and-arduino-9cc806?ref=platform&ref_id=424_popular___&offset=2"
+# URL: str = "https://create.arduino.cc/projecthub/TheGadgetBoy/ds18b20-digital-temperature-sensor-and-arduino-9cc806?ref=platform&ref_id=424_popular___&offset=2"
 
 
 def crawl_project(url: str) -> dict:
