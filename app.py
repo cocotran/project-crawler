@@ -5,10 +5,10 @@ from flask_cors import CORS, cross_origin
 from crawler import *
 
 app = Flask(__name__)
-
+CORS(app)
 
 @app.route('/project', methods=["POST"])
-@cross_origin(["http://localhost:3000/"])
+@cross_origin(["http://localhost:3000"])
 def project():
     url = request.json["url"]
     return crawl_project(url)
